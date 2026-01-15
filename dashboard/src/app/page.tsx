@@ -115,7 +115,9 @@ export default function Home() {
 
     // Cleanup subscription on unmount
     return () => {
-      supabase.removeChannel(channel);
+      if (supabase) {
+        supabase.removeChannel(channel);
+      }
     };
   }, [fetchNodes]);
 
