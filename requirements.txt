@@ -1,0 +1,3 @@
+supabase>=2.0.0
+GPUtil>=1.4.0
+python-dotenv>=1.0.0
